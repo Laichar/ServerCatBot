@@ -1,0 +1,27 @@
+{
+  "name": "servercatbot",
+  "version": "1.0.0",
+  "description": "A bot for all server cats.",
+  "main": "bot.js",
+  "scripts": {
+    "start": "node bot.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Laichar/ServerCatBot.git"
+  },
+  "keywords": [
+    "server-cat"
+  ],
+  "author": "HK-Laichar",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Laichar/ServerCatBot/issues"
+  },
+  "homepage": "https://github.com/Laichar/ServerCatBot#readme",
+  "dependencies": {
+    "discord.js": "^11.4.2",
+    "mongoose": "^5.4.0"
+  }
+}
