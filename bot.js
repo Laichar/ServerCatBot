@@ -1,6 +1,6 @@
 const Discord = require('discord.js');
 const client = new Discord.Client();
-
+const config = require("./config.json");
 client.on('ready', () => {
     console.log(`Logged in as ${client.user.tag}!`);
 });
@@ -10,7 +10,6 @@ client.on("message", (message) => {
     const args = message.content.slice(prefix.length).trim().split(/ +/g);
     const command = args.shift().toLowerCase();
     if (!message.content.startsWith(prefix) || message.author.bot) return;
- 
     if (message.content.startsWith(prefix + "ping")) {
         message.reply("Pong! :ping_pong:");
     } else
@@ -62,4 +61,4 @@ client.on("message", (message) => {
     }
 });
 
-client.login(process.env.TOKEN);
+client.login(config.token);
