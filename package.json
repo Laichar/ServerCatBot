@@ -22,6 +22,6 @@
   "homepage": "https://github.com/Laichar/ServerCatBot#readme",
   "dependencies": {
     "discord.js": "^11.4.2",
-    "mongoose": "^5.4.0"
+    "mongoose": "^5.7.5"
   }
 }
